@@ -1,0 +1,100 @@
+﻿
+@model ControlCatedratico.Models.CatedraticoModel
+@{
+    ViewData["Title"] = "Catedratico";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Modulo Consultar Catedratico</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Pureba</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <hr />
+    <div class="col-md-12">
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CodigoCatedratico)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CodigoCatedratico)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NombreCatedratico)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NombreCatedratico)
+            </dd>
+
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Genero)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Genero)
+            </dd>
+
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EstadoCivil)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EstadoCivil)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TelCatedratico)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TelCatedratico)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CorreoCatedratico)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CorreoCatedratico)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NoDpi)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NoDpi)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FechaIngreso)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FechaIngreso)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EstadoCatedratico)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EstadoCatedratico)
+            </dd>
+
+        </dl>
+    </div>
+    <a asp-action="InicioCatedratico">Regresar</a>
+</div>

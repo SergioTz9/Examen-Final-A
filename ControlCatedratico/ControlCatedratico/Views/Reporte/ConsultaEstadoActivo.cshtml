@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ControlCatedratico.Models.CatedraticoModel>
+
+@{
+    ViewData["Title"] = "Reporte";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Modulo de Reporte --</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Pureba</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodigoCatedratico)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCatedratico)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CorreoCatedratico)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EstadoCivil)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TelCatedratico)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EstadoCatedratico)
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var registros in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.CodigoCatedratico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.NombreCatedratico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.CorreoCatedratico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.EstadoCivil)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.TelCatedratico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => registros.EstadoCatedratico)
+                </td>
+
+            </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <div>
+        <a asp-action="Index">Regresar</a>
+    </div>
+</div>

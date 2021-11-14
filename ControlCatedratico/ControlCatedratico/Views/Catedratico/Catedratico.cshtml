@@ -1,0 +1,89 @@
+﻿@model ControlCatedratico.Models.CatedraticoModel
+
+@{
+    ViewData["Title"] = "Catedratico";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Modulo Agregar Catedratico</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Pureba</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-sm-12">
+                <form asp-action="Catedratico">
+
+                    <div class="form-group">
+                        <label asp-for="NombreCatedratico" class="conttrol-label"></label>
+                        <input asp-for="NombreCatedratico" class="form-control" />
+                        <span asp-validation-for="NombreCatedratico" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Genero" class="conttrol-label"></label>
+                        <input asp-for="Genero" class="form-control" />
+                        <span asp-validation-for="Genero" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="EstadoCivil" class="conttrol-label"></label>
+                        <input asp-for="EstadoCivil" class="form-control" />
+                        <span asp-validation-for="EstadoCivil" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TelCatedratico" class="conttrol-label"></label>
+                        <input asp-for="TelCatedratico" class="form-control" />
+                        <span asp-validation-for="TelCatedratico" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="CorreoCatedratico" class="conttrol-label"></label>
+                        <input asp-for="CorreoCatedratico" class="form-control" />
+                        <span asp-validation-for="CorreoCatedratico" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NoDpi" class="conttrol-label"></label>
+                        <input asp-for="NoDpi" class="form-control" />
+                        <span asp-validation-for="NoDpi" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="FechaIngreso" class="conttrol-label"></label>
+                        <input type="Date" asp-for="FechaIngreso" class="form-control" />
+                        <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Grabar Datos" class="btn btn-primary" />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a asp-action="InicioCatedratico">Regresar!</a>
+</div>

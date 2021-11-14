@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ControlCatedratico.Models.CursosModel>
+
+@{
+    ViewData["Title"] = "Curso";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Modulo de Curso --</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Pureba</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+        <a href="Curso" class="btn btn-primary">Agregar Curso</a>
+
+
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCurso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaInicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaFinaliza)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodigoCatedratico)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var registros in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => registros.NombreCurso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => registros.FechaInicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => registros.FechaFinaliza)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => registros.CodigoCatedratico)
+                    </td>
+
+                    <td>
+                        <a asp-action="EditarCurso" asp-route-id="@registros.CodigoCurso">Editar-</a>
+                        <a asp-action="ConsultaCurso" asp-route-id="@registros.CodigoCurso">Consultar-</a>
+                        <a asp-action="InicioCurso" onclick="return confirm('¿Desea eliminar este registro?')" asp-route-id="@registros.CodigoCatedratico">Eliminar</a>
+                    </td>
+
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+</div>

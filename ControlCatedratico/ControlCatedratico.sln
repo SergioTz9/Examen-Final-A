@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlCatedratico", "ControlCatedratico\ControlCatedratico.csproj", "{0AE7657E-8DF6-466A-8B67-51D80096746D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AE7657E-8DF6-466A-8B67-51D80096746D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE7657E-8DF6-466A-8B67-51D80096746D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE7657E-8DF6-466A-8B67-51D80096746D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE7657E-8DF6-466A-8B67-51D80096746D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F38BAAA-59B3-433D-BDCB-DC81FA146974}
+	EndGlobalSection
+EndGlobal
